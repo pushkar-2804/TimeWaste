@@ -1,7 +1,7 @@
 :root{
     --color-primary: #fef6e4;
     --color-secondary: #f3d2c1;
-    --color-different: #f582ae;
+    --color-different: rgb(252, 50, 151);
     --color-light: #8bd3dd;
     --color-dark: #001858;
     --color-background: orange;
@@ -71,9 +71,24 @@ header{
         flex-direction: column-reverse;
     }
 }
+/* trial */
+/* -------------------------------------------------------------- */
+@media screen and (min-width:500px) and (max-width: 680px){
+    .controls{
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        text-align: center;
+        align-items: center;
+    }
+}
+/* -------------------------------------------------------------- */
 @media screen and (min-width:500px) and (max-width: 800px){
     .nav{
         flex-direction: column-reverse;
+    }
+    .controls{
+        width: max-content;
     }
     
     
@@ -85,7 +100,7 @@ header{
     justify-content: space-around;
     margin: auto;
     background-color: var(--color-different);
-    width: 50%;
+    width: 30%;
     border-radius: 3px;
     
 }
