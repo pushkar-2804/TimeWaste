@@ -4,11 +4,12 @@
     --color-different: #f582ae;
     --color-light: #8bd3dd;
     --color-dark: #001858;
+    --color-background: orange;
 }
 
 
 body{
-    background-color:var(--color-primary);
+    background-color:var(--color-background);
     color: var(--color-dark);
 }
 /* header */
@@ -44,21 +45,49 @@ header{
     flex-direction: row-reverse;
     
 }
-@media screen and (max-width: 600px){
+@media screen and (min-width:320px) and (max-width: 500px) {
+    .content{
+        height: 400px;
+    }
+    .img{
+        height: 300px;
+    }
+    .controls{
+        display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
+        
+    }
+    .noUse{
+        width: 200px;
+    }
+    .btn{
+        margin: auto;
+    }
+    
     .nav{
         flex-direction: column-reverse;
     }
+}
+@media screen and (min-width:500px) and (max-width: 800px){
+    .nav{
+        flex-direction: column-reverse;
+    }
+    
+    
 }
 
 /* Controls */
 .controls{
     display: flex;   
     justify-content: space-around;
-    margin: 2rem auto;
+    margin: auto;
     background-color: var(--color-different);
     width: 50%;
     border-radius: 3px;
-    width:20rem;
+    
 }
 
 
@@ -86,7 +115,7 @@ header{
     text-align: center;
     vertical-align: middle;
     float: right;
-    height: 1.5rem;
+    height: max-content;
     width: 20vw;
     margin: 2rem auto ;
     /* margin-right: 2rem; */
