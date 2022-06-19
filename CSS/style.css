@@ -134,10 +134,11 @@ header{
     vertical-align: middle;
     text-align: center;
     align-items: center;
-        
+        padding: 1rem 1rem;
     }
     .noUse{
         width: 200px;
+        padding: 0.2rem;
     }
     .btn{
         margin: auto;
