@@ -42,7 +42,14 @@ header{
 .nav{
     display: flex;
     flex-direction: row-reverse;
+    
 }
+@media screen and (max-width: 600px){
+    .nav{
+        flex-direction: column-reverse;
+    }
+}
+
 /* Controls */
 .controls{
     display: flex;   
@@ -71,23 +78,7 @@ header{
     color: var(--color-primary);
     transition: all 0.2s;
 }
-/* ICONS */
-.icons{
-    padding-right: 1rem;
-}
-.icons:hover{
-    transform: scale(1.3);   
-    transition: transfrom 0.2s;
-}
 
-/* Contacts */
-.contact{
-    display: flex;
-    margin: 2rem 4rem;
-    list-style: none;
-    justify-content: center;
-    
-}
 
 /* waste time */
 .waste{
@@ -107,4 +98,25 @@ header{
     background-color: var(--color-dark);
     color: var(--color-primary);
     transition: all 0.2s;
+}
+
+
+
+
+/* Contacts */
+.contact{
+    display: flex;
+    margin: 2rem 4rem;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+/* ICONS */
+.icons{
+    padding-right: 1rem;
+}
+.icons:hover{
+    transform: scale(1.3);   
+    transition: transfrom 0.2s;
 }
