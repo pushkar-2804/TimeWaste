@@ -1,11 +1,17 @@
 :root{
+    /* Light Mode pallete */
     --color-primary: #fef6e4;
-    --color-secondary: #f3d2c1;
     --color-different: rgb(252, 50, 151);
-    --color-light: #8bd3dd;
     --color-dark: #001858;
     --color-background: orange;
     --color-tertiary: #ffd2bb;
+    /* Dark mode pallete */
+    /* --color-dark-background: #16161a;
+    --color-dark-different: #7f5af0;
+    --color-light: #fff;
+    --color-dark-primary: #94a1b2;
+    --color-dark-tertiary: #2cb67d; */
+
 }
 
 
@@ -168,4 +174,34 @@ header{
     }
     
     
+}
+
+/* DARK MODE */
+.darkMode_body{
+    background-color: var(--color-dark-background);
+    color: var(--color-light);
+}
+.darkMode_content{
+    border: 2px solid var(--color-light);
+    background-color: var(--color-dark-primary);
+}
+.darkMode_controls{
+    background-color: var(--color-dark-tertiary)
+}
+.darkMode_btn{
+    background-color: var(--color-dark-tertiary);
+    color: var(--color-light);
+    border: 2px solid var(--color-dark-primary);
+}
+.darkMode_btn:hover{
+    background-color: var(--color-dark-different) ;
+    color: var(--color-light);
+}
+.darkMode_waste{
+    background-color: var(--color-dark-primary) ;
+    color: var(--color-dark-different);
+}
+.darkMode_waste:hover{
+    background-color: var(--color-dark-different);
+    color: var(--color-light);
 }
