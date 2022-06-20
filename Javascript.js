@@ -20,4 +20,7 @@ var count = 0;
         btn.onclick = function () {
             count++;
             disp.innerHTML = count;
+            if (count==69|| count==420){
+              alert("Nicee :)")
+            }
         }
