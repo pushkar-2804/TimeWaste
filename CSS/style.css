@@ -177,7 +177,7 @@ header{
 }
 
 /* DARK MODE */
-.darkMode_body{
+/* .darkMode_body{
     background-color: var(--color-dark-background);
     color: var(--color-light);
 }
@@ -204,4 +204,4 @@ header{
 .darkMode_waste:hover{
     background-color: var(--color-dark-different);
     color: var(--color-light);
-}
+} */
