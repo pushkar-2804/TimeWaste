@@ -36,12 +36,12 @@ header{
     
     
 }
-.imgContent {
+.img{
     object-fit: contain;
     width: 90%;
     height: 80%;
 }
-.imgContent:hover{
+.img:hover{
     transform: scale(1.07);
     transition: all 0.2s;
 }
@@ -107,13 +107,14 @@ header{
 /* QR */
 .qr{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    
 }
-.qr>img{
-    max-width: 150px;
+.qrImg{
+    max-width: 150px ;
+    margin-left: 3rem;
 }
+
 
 /* CONTACTS */
 .contact{
@@ -160,6 +161,13 @@ header{
     
     .nav{
         flex-direction: column-reverse;
+    }
+
+    .qr{
+        flex-direction: column;
+    }
+    .qrImg{
+        margin-left: 0;
     }
 }
 
