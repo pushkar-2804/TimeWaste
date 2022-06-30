@@ -36,12 +36,12 @@ header{
     
     
 }
-.img{
+.imgContent {
     object-fit: contain;
     width: 90%;
     height: 80%;
 }
-.img:hover{
+.imgContent:hover{
     transform: scale(1.07);
     transition: all 0.2s;
 }
@@ -104,8 +104,16 @@ header{
     transition: all 0.2s;
 }
 
-
-
+/* QR */
+.qr{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.qr>img{
+    max-width: 150px;
+}
 
 /* CONTACTS */
 .contact{
