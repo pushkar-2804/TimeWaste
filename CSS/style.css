@@ -19,6 +19,7 @@ body{
     background-color:var(--color-background);
     color: var(--color-dark);
 }
+
 /* HEADER */
 header{
     text-align: center;
@@ -103,6 +104,23 @@ header{
     color: var(--color-primary);
     transition: all 0.2s;
 }
+
+/* Game Links */
+.game{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+#guessGame , #drumSet{
+    text-decoration: none;   
+    text-align: center;
+}
+
+#guessGame:hover , #drumSet:hover{
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
 
 /* QR */
 .qr{
